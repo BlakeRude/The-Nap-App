@@ -1,8 +1,4 @@
-﻿using Nap.Services;
-using Nap.Views;
-using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Xamarin.Forms;
 
 namespace Nap
 {
@@ -13,7 +9,7 @@ namespace Nap
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
+            //DependencyService.Register<MockDataStore>();
             MainPage = new AppShell();
         }
 
