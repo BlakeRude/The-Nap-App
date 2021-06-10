@@ -7,29 +7,122 @@
              >
     <ContentPage.Content>
         <StackLayout>
+            <Label/>
+            <Label/>
+            <Label/>
+            <Label/>
+            <Label/>
             <Label 
-                    x:Name="WelcomeTitle"
-                    FontSize="Title"
-                    Text="It's Nap Time."
-                    TextColor="#FFFF00"
-                    VerticalOptions="StartAndExpand" 
-                    HorizontalOptions="CenterAndExpand" />
+                x:Name="WelcomeTitle"
+                FontSize="Title"
+                Text="It's Nap Time."
+                TextColor="#9F9F00"
+                HorizontalOptions="CenterAndExpand"
+                />
             <Label 
-                    x:Name="WelcomeDescription"
-                    FontSize="Title"
-                    Text="Blah Blah Blah test test test.Blah Blah Blah test test test.Blah Blah Blah test test test.Blah Blah Blah test test test.Blah Blah Blah Blah Blah Blah test test test.Blah Blah Blah test test test.Blah Blah Blah test test test.Blah Blah Blah test test test.Blah Blah Blah test test test.test test test."
-                    TextColor="#FFFF00"
-                    VerticalOptions="StartAndExpand" 
-                    HorizontalOptions="CenterAndExpand" />
+                x:Name="WelcomeDescription0"
+                FontSize="Small"
+                Text="The Nap App is here to cut out the crap."
+                TextColor="#9F9F00"
+                BackgroundColor="Black"
+                HorizontalOptions="Center"
+                />
+            <Label 
+                x:Name="WelcomeDescription1"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Text="You just want a Nap."
+                TextColor="#9F9F00"
+                BackgroundColor="Black"
+                HorizontalOptions="Center"
+                />
+            <Label/>
+            <Label 
+                x:Name="WelcomeDescription2"
+                FontSize="Medium"
+                Text="Studies have shown that nap-taking is great for your physical and mental health."
+                TextColor="#9F9F00"
+                BackgroundColor="Black"
+                HorizontalOptions="Center"
+                />
+            <Label/>
+            <Label 
+                x:Name="WelcomeDescription3"
+                FontSize="Medium"
+                Text="The Nap App was created to make a simple, easy to use nap-taking utility using doctor recomended nap lengths."
+                TextColor="#9F9F00"
+                BackgroundColor="Black"
+                HorizontalOptions="Center"
+                />
+            <Button
+                x:Name="NapInfoButton"
+                Text="Press for nap length information."
+                HeightRequest="30"
+                BackgroundColor="Black"
+                TextColor="#9F9F00"
+                FontSize="10"
+                FontAttributes="Bold"
+                HorizontalOptions="End"
+                />
+            <Label 
+                x:Name="WelcomeDescription4"
+                FontSize="Medium"
+                Text="Custom Nap Lengths are optional and all Naps are logged in your NapLog."
+                TextColor="#9F9F00"
+                BackgroundColor="Black"
+                HorizontalOptions="Center"
+                VerticalOptions="StartAndExpand"
+                />
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-                <Button FontSize="20" Grid.Column="0" Text="20-30" x:Name="RevealCode1"/>
-                <Button FontSize="20" Grid.Column="1" Text="90" x:Name="RevealCode2"/>
-                <Button FontSize="18" Grid.Column="2" Text="Custom" x:Name="RevealCode3"/>
-                <Button FontSize="18" Grid.Column="3" Text="Nap Log" x:Name="RevealCode4" />
+                
+                <Button 
+                    FontAttributes="Italic"
+                    BorderColor="#090909"
+                    BackgroundColor="Black"
+                    BorderWidth="2"
+                    TextColor="#FFFFFF"
+                    FontSize="21"
+                    Grid.Column="0"
+                    Text="20-30"
+                    x:Name="LT30Nap"/>
+                
+                <Button
+                    FontAttributes="Italic"
+                    BorderColor="#090909"
+                    BackgroundColor="Black"
+                    BorderWidth="2"
+                    TextColor="#FFFFFF"
+                    FontSize="21"
+                    Grid.Column="1"
+                    Text="90"
+                    x:Name="Nap90"/>
+                
+                <Button
+                    FontAttributes="Italic"
+                    BorderColor="#090909"
+                    BackgroundColor="Black"
+                    BorderWidth="2"
+                    TextColor="#FFFFFF"
+                    FontSize="19"
+                    FontFamily="Arial"
+                    Grid.Column="2"
+                    Text="Custom"
+                    x:Name="CustomNap"/>
+                
+                <Button
+                    FontAttributes="Italic"
+                    BorderColor="#090909"
+                    BackgroundColor="Black"
+                    BorderWidth="2"
+                    TextColor="#FFFFFF"
+                    FontSize="19"
+                    Grid.Column="3"
+                    Text="Other"
+                    x:Name="LogandSettings" />
             </Grid>
         </StackLayout>
     </ContentPage.Content>
