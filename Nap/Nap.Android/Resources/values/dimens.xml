@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <!-- https://go.microsoft.com/fwlink/?linkid=2124038
+    <issue id="HardcodedText" severity="error">
+        <ignore path="Resources\layout\content_main.xml" />
+    </issue>
+    -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">12sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">12sp</dimen>
+</resources>
+</configuration>
