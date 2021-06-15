@@ -21,7 +21,7 @@ namespace Nap.Views
 
         private async void LT30Nap_ClickedAsync(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ThirtyNap());
+            await DisplayAlert ("20 to 30 Minute Nap", "Twenty to thirty minute naps are the most reccomended nap lengths. This nap length is the most likely for you to refrain from waking up groggy, while still waking up rejuvenated.", "OK");
         }
 
         private async void Nap90_Clicked(object sender, EventArgs e)

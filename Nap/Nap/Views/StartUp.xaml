@@ -5,6 +5,7 @@
              x:Class="Nap.Views.StartUp"
              Title="The Nap App"
              >
+
     <ContentPage.Content>
         <StackLayout>
             <Label/>
@@ -112,17 +113,7 @@
                     Grid.Column="2"
                     Text="Custom"
                     x:Name="CustomNap"/>
-                
-                <Button
-                    FontAttributes="Italic"
-                    BorderColor="#090909"
-                    BackgroundColor="Black"
-                    BorderWidth="2"
-                    TextColor="#FFFFFF"
-                    FontSize="19"
-                    Grid.Column="3"
-                    Text="Other"
-                    x:Name="LogandSettings" />
+
             </Grid>
         </StackLayout>
     </ContentPage.Content>

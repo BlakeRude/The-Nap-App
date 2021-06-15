@@ -2,7 +2,6 @@
 <Shell xmlns="http://xamarin.com/schemas/2014/forms" 
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:local="clr-namespace:Nap.Views"
-       Title="Nap"
        x:Class="Nap.AppShell">
 
     <!--
@@ -16,8 +15,8 @@
             <Style x:Key="BaseStyle" TargetType="Element">
                 <Setter Property="Shell.BackgroundColor" Value="{StaticResource Primary}" />
                 <Setter Property="Shell.ForegroundColor" Value="White" />
+                <Setter Property="Shell.TitleColor" Value="White" />
                 <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
-                <Setter Property="Shell.TitleColor" Value="#9F9F00" />
                 <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
                 <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource Primary}" />
                 <Setter Property="Shell.TabBarForegroundColor" Value="White"/>
@@ -30,16 +29,15 @@
     </Shell.Resources>
 
     <TabBar>
-        <ShellContent Title="Starting Page" ContentTemplate="{DataTemplate local:StartUp}" />
+        <ShellContent Title="20-30"  Route="AboutPage" ContentTemplate="{DataTemplate local:ThirtyNap}" />
+        <ShellContent Title="90" ContentTemplate="{DataTemplate local:NinetyNap}" />
+        <ShellContent Title="Info" ContentTemplate="{DataTemplate local:StartUp}" />
+        <ShellContent Title="Custom" ContentTemplate="{DataTemplate local:CustomNap}" />
+        <ShellContent Title="Settings" ContentTemplate="{DataTemplate local:Settings}" />
     </TabBar>
 
     <!--
         If you would like to navigate to this content you can do so by calling
         await Shell.Current.GoToAsync("//LoginPage");
     -->
-    <TabBar>
-        <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate local:StartUp}" />
-    </TabBar>
-
-
 </Shell>
